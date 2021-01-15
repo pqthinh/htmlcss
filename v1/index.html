@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="function">
+            <span class="icon">
+                <a href="#">
+                    <img src="./images/icons/upload1.png"/>
+                </a>
+            </span>
+            <span class="icon">
+                <a href="#">
+                    <img src="./images/icons/search.png"/>
+                </a>
+            </span>
+            <span class="icon">
+                <a href="#">
+                    <img src="./images/icons/ask.png"/>
+                </a>
+            </span>
+        </div>
+        <div class="logo">
+            <img src="./images/logoBAB.png"/>
+        </div>
+        <div class="local">
+            <button class="local_btn active" id="En" onclick="openLocal(event)">EN</button>
+            <button class="local_btn" id="Vi" onclick="openLocal(event)">VI</button>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="body">
+        <div class="search">
+            <div class="title-tab">Tra cứu hóa đơn điện tử</div>
+            <div class="body-search">
+                <div class="tab">
+                    <div class="tab-search active" onclick="openTab(event, 'search-single')">
+                        <div>
+                            <span class="icon">
+                                <a href="#">
+                                    <img src="./images/icons/bag.png"/>
+                                </a>
+                            </span>
+                        </div>
+                        Tra cứu một hóa đơn
+                    </div>
+                    <div class="tab-search"  onclick="openTab(event, 'search-multi')">
+                        <div>
+                            <span class="icon">
+                                <a href="#">
+                                    <img src="./images/icons/bag_outer.png"/>
+                                </a>
+                            </span>
+                        </div>
+                        Tra cứu nhiều hóa đơn
+                    </div>
+                </div>
+                
+                <div id="search-single" class="form-search">
+                    <form >
+                        <div class="title">Tra cứu một hóa đơn</div>
+
+                        <input type="text" placeholder="Mã tra cứu" id="code"/>
+                        <input type="submit" class="btn-submit" value="Tìm kiếm"/>
+                    </form>
+                </div>
+                <div id="search-multi" class="form-search">
+                    <form >
+                        <div class="title">Tra cứu nhiều hóa đơn</div>
+
+                        <input type="text" placeholder="Mã tra cứu" id="code"/>
+                        <input type="text" placeholder="Mã tra cứu" id="code"/>
+                        <input type="text" placeholder="Mã tra cứu" id="code"/>
+                        <input type="submit" class="btn-submit" value="Tìm kiếm"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <!-- <script>
+        function openLocal(id) {
+
+        }
+
+        function openTab(id) {
+
+        }
+    </script> -->
+</body>
+</html>
