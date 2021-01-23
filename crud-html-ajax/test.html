@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>  
+</head>
+<body>
+    <textarea name="editor1"></textarea><br/> //Write data  
+    <textarea name="editor2"></textarea><br />//Set Data  
+    <input type="button" id="getData" name="getData" value="Get and Set Data" onclick="getData()" />  
+    <script>  
+        CKEDITOR.replace('editor1');  
+        CKEDITOR.replace('editor2');  
+      
+        function getData() {  
+            //Get data written in first Editor   
+            var editor_data = CKEDITOR.instances['editor1'].getData();  
+            //Set data in Second Editor which is written in first Editor  
+            console.log(editor_data)
+            CKEDITOR.instances['editor2'].setData("ewkjfjwekf wefkjfewq");  
+        }  
+    </script>  
+</body>
+</html>
