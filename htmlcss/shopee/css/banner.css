@@ -28,4 +28,53 @@
 img {
     object-fit: cover;
     width: 100%;
+    transition: width 1s ease-in-out;
+}
+
+.preview {
+    display: flex;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.preview img {
+    object-fit: contain;
+    height: 50px;
+    border-radius: 2px;
+    transition: width 1s ease-in-out;
+}
+
+.preview .show {
+    border: olivedrab 1px solid;
+    opacity: 0.5;
+}
+
+.btn {
+    border: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background: olivedrab;
+    color: peachpuff;
+}
+
+.img-banner {
+    position: relative;
+}
+
+#next {
+    right: 0;
+    top: 50%;
+}
+
+#prev {
+    left: 0;
+    top: 50%;
 }

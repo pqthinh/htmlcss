@@ -9,13 +9,22 @@
 <body>
     <section class="block">
         <div id="banner">
-            <img alt="Banner 1" class="active" src="../images/banner/banner1.jpeg" />
-            <img alt="Banner 2" class="deactive"  src="../images/banner/banner2.jpeg" />
-            <img alt="Banner 3" class="deactive" src="../images/banner/banner1.jpeg" />
-            <img alt="Banner 4" class="deactive" src="../images/banner/banner2.jpeg" />
-            
-            <button></button>
-            <button></button>
+            <div class="img-banner">
+                <img alt="Banner 1" class="active" src="../images/banner/banner1.jpeg" />
+                <img alt="Banner 2" class="deactive"  src="../images/banner/banner2.jpeg" />
+                <img alt="Banner 3" class="deactive" src="../images/banner/banner1.jpeg" />
+                <img alt="Banner 4" class="deactive" src="../images/banner/banner2.jpeg" />
+                
+                <button class="btn" id="next" onclick="getImgSlide(1)">next</button>
+                <button  class="btn" id="prev" onclick="getImgSlide(0)">prev</button>
+            </div>
+
+            <div class="preview">
+                <img alt="Banner 1" class="show" src="../images/banner/banner1.jpeg" />
+                <img alt="Banner 2" class=""  src="../images/banner/banner2.jpeg" />
+                <img alt="Banner 3" class="" src="../images/banner/banner1.jpeg" />
+                <img alt="Banner 4" class="" src="../images/banner/banner2.jpeg" />
+            </div>
         </div>
         
     </section>
